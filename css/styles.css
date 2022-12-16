@@ -47,10 +47,13 @@ svg {
 .project-tile {
     background-color: #303841;
     border-radius: 8px;
+    width: 350px;
+    height: 300px;
 }
+
 .project-img {
     width: 100%;
-    height: auto;
+    height: 80%;
 }
 
 .project-title {
