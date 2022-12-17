@@ -177,6 +177,11 @@ svg {
     #project-grid {
         width: 90%;
     }
+
+    #section-title{
+        width: 80%;
+        word-wrap: break-word;
+    }
 }
 
 @media (min-width: 600px) {
