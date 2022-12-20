@@ -114,6 +114,8 @@ svg {
 .socials-links {
     padding-right: 20px;
     font-weight: 600;
+    display: flex;
+    align-items: center;
 }
 
 #header {
@@ -241,11 +243,16 @@ svg {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 #socials-list {
     display: flex;
     flex-direction: row;
+}
+
+#fem-profile-link{
+    width: 40px;
 }
 
 #footer {
