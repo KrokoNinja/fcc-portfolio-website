@@ -293,6 +293,15 @@ svg {
         word-wrap: break-word;
     }
 
+    #nav-list{
+        width: 100%;
+    }
+
+    #greed{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
     #project-grid {
         width: 90%;
     }
