@@ -181,7 +181,6 @@ svg {
 }
 
 #current{
-    width: 100vw;
     min-height: 100vh;
     background-color: #50457D;
     padding-top: 75px;
@@ -288,13 +287,14 @@ svg {
         margin-bottom: 50px;
     }
 
-    #project-grid {
-        width: 90%;
+    .section-title{
+        max-width: 80%;
+        white-space: normal;
+        word-wrap: break-word;
     }
 
-    #section-title{
-        width: 80%;
-        word-wrap: break-word;
+    #project-grid {
+        width: 90%;
     }
 }
 
