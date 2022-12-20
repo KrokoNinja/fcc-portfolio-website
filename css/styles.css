@@ -25,6 +25,7 @@ a {
 svg {
     position: relative;
     top: 2px;
+    z-index: 0;
 }
 
 .nav-link {
@@ -74,10 +75,10 @@ svg {
     justify-content: flex-end;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 #navbar{
-    z-index: 2;
     overflow: hidden;
 }
 
@@ -213,6 +214,11 @@ svg {
 }
 
 @media (min-width: 1300px){
+    .project-tile {
+        width: 325px;
+        height: 300px;
+    }
+
     #project-grid {
         grid-template-columns: 1fr 1fr 1fr;
         max-width: 1100px;
