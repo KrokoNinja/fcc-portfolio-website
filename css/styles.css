@@ -95,13 +95,20 @@ svg {
     max-width: 240px;
     color: black;
     text-align: center;
-    visibility: hidden;
     pointer-events: none;
     font-size: 1.25rem;
+    opacity: 0;
 }
 
 .fem-text{
     color: var(--lightgray);
+    animation: hide 1s ease-out;
+    opacity: 0;
+}
+
+.js-text{
+    animation: hide 1s ease-out;
+    opacity: 0;
 }
 
 .socials-links {
@@ -181,6 +188,8 @@ svg {
 #frontendmentor{
     width: 320px;
     height: 320px;
+    filter: none;
+    transition: filter 1s ease-in-out;
 }
 
 #frontendmentor:is(:hover, :focus){
@@ -189,12 +198,15 @@ svg {
 }
 
 #frontendmentor:is(:hover, :focus) + .fem-text{
-    visibility: visible;
+    animation: visible 1s ease-in;
+    animation-fill-mode: forwards;
 }
 
 #javascript-logo{
     width: 320px;
     height: 320px;
+    filter: none;
+    transition: filter 1s ease-in-out;
 }
 
 #javascript-logo:is(:hover, :focus){
@@ -204,7 +216,8 @@ svg {
 
 
 #javascript-logo:is(:hover, :focus) + .js-text{
-    visibility: visible;
+    animation: visible 1s ease-in;
+    animation-fill-mode: forwards;
 }
 
 #contact {
@@ -243,6 +256,24 @@ svg {
     justify-content: center;
     align-items: center;
     font-weight: 700;
+}
+
+@keyframes visible {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes hide {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
 }
 
 @media (max-width: 600px) {
