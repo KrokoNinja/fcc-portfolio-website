@@ -69,14 +69,14 @@ svg {
 .project-title {
     font-size: 1.2rem;
     padding: 15px;
+    text-align: center;
 }
 
 .current-content-wrapper{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
     width: 80%;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
     margin: 0 auto;
     padding-top: 50px;
     gap: 50px;
@@ -100,8 +100,7 @@ svg {
     opacity: 0;
 }
 
-.fem-text{
-    color: var(--lightgray);
+.bt-text{
     animation: hide 1s ease-out;
     opacity: 0;
 }
@@ -186,19 +185,19 @@ svg {
     padding-top: 75px;
 }
 
-#frontendmentor{
+#bootstrap{
     width: 320px;
     height: 320px;
     filter: none;
     transition: filter 1s ease-in-out;
 }
 
-#frontendmentor:is(:hover, :focus){
+#bootstrap:is(:hover, :focus){
     mix-blend-mode: normal;
     filter: blur(30px);
 }
 
-#frontendmentor:is(:hover, :focus) + .fem-text{
+#bootstrap:is(:hover, :focus) + .bt-text{
     animation: visible 1s ease-in;
     animation-fill-mode: forwards;
 }
