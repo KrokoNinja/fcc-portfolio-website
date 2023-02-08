@@ -73,9 +73,10 @@ svg {
 }
 
 .current-content-wrapper{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     width: 80%;
     margin: 0 auto;
     padding-top: 50px;
@@ -173,7 +174,7 @@ svg {
     padding-top: 75px;
 }
 
-#project-grid {
+.project-grid {
     display: grid;
     place-items: center;
     margin: 0 auto;
@@ -186,8 +187,8 @@ svg {
 }
 
 #bootstrap{
-    width: 320px;
-    height: 320px;
+    width: 300px;
+    height: 300px;
     filter: none;
     transition: filter 1s ease-in-out;
 }
@@ -203,8 +204,8 @@ svg {
 }
 
 #javascript-logo{
-    width: 320px;
-    height: 320px;
+    width: 300px;
+    height: 300px;
     filter: none;
     transition: filter 1s ease-in-out;
 }
@@ -301,8 +302,24 @@ svg {
         margin: 0 auto;
     }
 
-    #project-grid {
+    .project-grid {
         width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    .project-tile {
+        margin-bottom: 50px;
+    }
+
+    .project-grid {
+        width: 90%;
+        max-width: 600px;
+    }
+
+    .current-content-wrapper {
+        padding-top: 0;
+        gap: 0;
     }
 }
 
@@ -311,9 +328,14 @@ svg {
         margin-bottom: 50px;
     }
 
-    #project-grid {
+    .project-grid {
         width: 90%;
         max-width: 600px;
+    }
+
+    .current-content-wrapper {
+        padding-top: 0;
+        gap: 0;
     }
 }
 
@@ -323,7 +345,7 @@ svg {
         margin-bottom: 25px;
     }
 
-    #project-grid {
+    .project-grid {
         grid-template-columns: 1fr 1fr;
         max-width: 800px;
     }
@@ -335,7 +357,7 @@ svg {
         height: 300px;
     }
 
-    #project-grid {
+    .project-grid {
         grid-template-columns: 1fr 1fr 1fr;
         max-width: 1100px;
     }
